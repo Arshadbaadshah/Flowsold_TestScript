@@ -1,0 +1,9 @@
+datasources:061967f4b5d47c5b0070e9f693b7ac9fdc94ac30
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:a4cd06e6ed3d2ed6cd6a73d82ccd01c2f3dc5a4f
+--suite Suites.Event Completed
+--suite Suites.Pagination
+--suite Suites.Search
+--suite Suites.Single Delete
+--suite Suites.Main

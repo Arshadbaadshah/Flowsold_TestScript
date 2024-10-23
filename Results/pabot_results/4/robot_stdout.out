@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Main                                                                   
+==============================================================================
+Login With Facebook Test                                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\ArshadPKL\PycharmProjects\pythonProject1\TestCases\Main.robot:20
+    T:  Login With Facebook Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\ArshadPKL\PycharmProjects\pythonProject1\TestCases\Main.robot:109
+      Wait Until Element Is Visible    xpath://span[normalize-space()='Remote Audio']
+______________________________________________________________________________
+| FAIL |
+Element 'xpath://span[normalize-space()='Remote Audio']' not visible after 5 seconds.
+------------------------------------------------------------------------------
+Suites.Main                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\ArshadPKL\PycharmProjects\pythonProject1\Results\pabot_results\4\output.xml

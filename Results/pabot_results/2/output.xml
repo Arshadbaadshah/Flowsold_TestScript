@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.9.13 on win32)" generated="2024-10-18T18:21:05.281067" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Search" source="C:\Users\ArshadPKL\PycharmProjects\pythonProject1\TestCases\Search.robot">
+<test id="s1-s1-t1" name="SearchTest" line="19">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:07.322508" level="INFO">Opening browser 'Chrome' to base url 'https://uat-my.flowsold.com/'.</msg>
+<arg>${WEB_APP_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-18T18:21:07.321508" elapsed="5.632903"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-18T18:21:12.955410" elapsed="0.182236"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-10-18T18:21:13.137646" elapsed="0.001011"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-18T18:21:13.139657" elapsed="3.312646"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:16.454307" level="INFO">Typing text 'zach.bonham@tridius.co' into text field 'xpath://input[@id='email']'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>zach.bonham@tridius.co</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:16.453303" elapsed="3.173275"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:19.628588" level="INFO">Typing password into text field 'xpath=//input[@id='password']'.</msg>
+<msg time="2024-10-18T18:21:21.871761" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>Testlab!02</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:19.627590" elapsed="3.861153"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:23.488743" level="INFO">Clicking button 'xpath://button[text()='Sign in']'.</msg>
+<arg>xpath://button[text()='Sign in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:23.488743" elapsed="5.381976"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Search / Filter']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-18T18:21:28.870719" elapsed="4.069542"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:32.940261" level="INFO">Typing text 'Andy' into text field 'xpath://input[@placeholder='Search / Filter']'.</msg>
+<arg>xpath://input[@placeholder='Search / Filter']</arg>
+<arg>Andy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:32.940261" elapsed="3.222017"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-18T18:21:38.163009" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-18T18:21:36.162278" elapsed="2.000731"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:38.163009" level="INFO">Clicking element 'xpath://li[1]//div[1]//div[1]//h4[1]//span[1]'.</msg>
+<arg>xpath://li[1]//div[1]//div[1]//h4[1]//span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:38.163009" elapsed="2.090096"/>
+</kw>
+<status status="PASS" start="2024-10-18T18:21:07.320508" elapsed="32.932597"/>
+</test>
+<status status="PASS" start="2024-10-18T18:21:05.354614" elapsed="34.898491"/>
+</suite>
+<status status="PASS" start="2024-10-18T18:21:05.308896" elapsed="34.944209"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Search">Suites.Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

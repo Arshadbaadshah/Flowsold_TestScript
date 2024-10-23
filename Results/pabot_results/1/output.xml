@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.9.13 on win32)" generated="2024-10-18T18:21:05.286701" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Pagination" source="C:\Users\ArshadPKL\PycharmProjects\pythonProject1\TestCases\Pagination.robot">
+<test id="s1-s1-t1" name="SearchTest" line="20">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:07.337519" level="INFO">Opening browser 'chrome' to base url 'https://uat-my.flowsold.com/'.</msg>
+<arg>${WEB_APP_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-18T18:21:07.337519" elapsed="5.717016"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-18T18:21:13.054535" elapsed="0.246949"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-10-18T18:21:13.302481" elapsed="0.001001"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-18T18:21:13.303482" elapsed="3.286788"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:16.592033" level="INFO">Typing text 'zach.bonham@tridius.co' into text field 'xpath://input[@id='email']'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>zach.bonham@tridius.co</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:16.591274" elapsed="3.156697"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:19.747971" level="INFO">Typing password into text field 'xpath=//input[@id='password']'.</msg>
+<msg time="2024-10-18T18:21:21.887823" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>Testlab!02</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:19.747971" elapsed="3.597662"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:23.345633" level="INFO">Clicking button 'xpath://button[text()='Sign in']'.</msg>
+<arg>xpath://button[text()='Sign in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:23.345633" elapsed="5.464052"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='2']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-18T18:21:28.809685" elapsed="4.082876"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:32.892561" level="INFO">Clicking element 'xpath://a[normalize-space()='2']'.</msg>
+<arg>xpath://a[normalize-space()='2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:32.892561" elapsed="2.142247"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='4']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-18T18:21:35.034808" elapsed="2.003051"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:37.037859" level="INFO">Clicking element 'xpath://a[normalize-space()='4']'.</msg>
+<arg>xpath://a[normalize-space()='4']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:37.037859" elapsed="2.063541"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:39.102078" level="INFO">Clicking element 'xpath://li[@title='Next Page']//button[@type='button']'.</msg>
+<arg>xpath://li[@title='Next Page']//button[@type='button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:39.102078" elapsed="2.102669"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-18T18:21:41.204747" level="INFO">Clicking element 'xpath://li[@title='Previous Page']//button[@type='button']'.</msg>
+<arg>xpath://li[@title='Previous Page']//button[@type='button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T18:21:41.204747" elapsed="2.115076"/>
+</kw>
+<status status="PASS" start="2024-10-18T18:21:07.335519" elapsed="35.984304"/>
+</test>
+<status status="PASS" start="2024-10-18T18:21:05.354614" elapsed="37.965209"/>
+</suite>
+<status status="PASS" start="2024-10-18T18:21:05.304711" elapsed="38.015112"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Pagination">Suites.Pagination</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
