@@ -1,105 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.9.13 on win32)" generated="2024-10-22T16:40:02.851145" rpa="false" schemaversion="5">
-<suite id="s1" name="Event Completed" source="C:\Users\ArshadPKL\PycharmProjects\pythonProject1\TestCases\Event_Completed.robot">
-<test id="s1-t1" name="SearchTest" line="20">
+<robot generator="Robot 7.1 (Python 3.9.13 on win32)" generated="2024-10-24T11:41:32.988835" rpa="false" schemaversion="5">
+<suite id="s1" name="Negative Cases" source="C:\Users\ArshadPKL\PycharmProjects\pythonProject1\TestCases\Negative_Cases.robot">
+<test id="s1-t1" name="SearchTest" line="19">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-22T16:40:03.087461" level="INFO">Opening browser 'chrome' to base url 'https://uat-my.flowsold.com/'.</msg>
+<msg time="2024-10-24T11:41:33.236241" level="INFO">Opening browser 'Chrome' to base url 'https://uat-my.flowsold.com/'.</msg>
 <arg>${WEB_APP_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-22T16:40:03.087461" elapsed="4.097605"/>
+<status status="PASS" start="2024-10-24T11:41:33.235240" elapsed="4.275558"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-10-22T16:40:07.185066" elapsed="0.055559"/>
+<status status="PASS" start="2024-10-24T11:41:37.511797" elapsed="0.054316"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>1s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-10-22T16:40:07.241630" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T11:41:37.566113" elapsed="0.000997"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${EMAIL_FIELD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-22T16:40:07.241630" elapsed="3.305217"/>
+<status status="PASS" start="2024-10-24T11:41:37.567110" elapsed="3.236488"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-22T16:40:10.546847" level="INFO">Typing text 'zach.bonham@tridius.co' into text field 'xpath://input[@id='email']'.</msg>
+<msg time="2024-10-24T11:41:40.803598" level="INFO">Typing text 'zach.bonham@tridius.co' into text field 'xpath://input[@id='email']'.</msg>
 <arg>${EMAIL_FIELD}</arg>
 <arg>zach.bonham@tridius.co</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-22T16:40:10.546847" elapsed="3.186714"/>
+<status status="PASS" start="2024-10-24T11:41:40.803598" elapsed="3.193793"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-10-22T16:40:13.733561" level="INFO">Typing password into text field 'xpath=//input[@id='password']'.</msg>
-<msg time="2024-10-22T16:40:15.807326" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-10-24T11:41:43.998644" level="INFO">Typing password into text field 'xpath=//input[@id='password']'.</msg>
+<msg time="2024-10-24T11:41:46.059080" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASSWORD_FIELD}</arg>
 <arg>Testlab!02</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-22T16:40:13.733561" elapsed="3.169503"/>
+<status status="PASS" start="2024-10-24T11:41:43.997906" elapsed="3.156761"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-22T16:40:16.903064" level="INFO">Clicking button 'xpath://button[text()='Sign in']'.</msg>
+<msg time="2024-10-24T11:41:47.154667" level="INFO">Clicking button 'xpath://button[text()='Sign in']'.</msg>
 <arg>xpath://button[text()='Sign in']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-22T16:40:16.903064" elapsed="5.071905"/>
+<status status="PASS" start="2024-10-24T11:41:47.154667" elapsed="5.082878"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath://div[@class='ant-tabs-tab']</arg>
+<arg>xpath://input[@placeholder='Search / Filter']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-22T16:40:21.974969" elapsed="3.411499"/>
+<status status="PASS" start="2024-10-24T11:41:52.238544" elapsed="3.555630"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-22T16:40:25.386468" level="INFO">Clicking element 'xpath://div[@class='ant-tabs-tab']'.</msg>
-<arg>xpath://div[@class='ant-tabs-tab']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-22T16:40:25.386468" elapsed="2.095118"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath://div[@id='rc-tabs-0-panel-completed']//li[1]//div[1]//div[1]//h4[1]//span[1]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-22T16:40:27.481586" elapsed="2.029257"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-24T11:41:55.794174" level="INFO">Typing text 'Rishabh' into text field 'xpath://input[@placeholder='Search / Filter']'.</msg>
+<arg>xpath://input[@placeholder='Search / Filter']</arg>
+<arg>Rishabh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T11:41:55.794174" elapsed="3.236023"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-10-22T16:40:29.510843" elapsed="1.006027"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-22T16:40:30.516870" level="INFO">Clicking element 'xpath://div[@id='rc-tabs-0-panel-completed']//li[1]//div[1]//div[1]//h4[1]//span[1]'.</msg>
-<arg>xpath://div[@id='rc-tabs-0-panel-completed']//li[1]//div[1]//div[1]//h4[1]//span[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-22T16:40:30.516870" elapsed="2.092037"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>5s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-10-22T16:40:32.608907" elapsed="1.010290"/>
+<status status="PASS" start="2024-10-24T11:41:59.030197" elapsed="1.015229"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-10-22T16:40:38.021075" level="INFO">Current page contains text 'Items Shown'.</msg>
-<arg>Items Shown</arg>
+<msg time="2024-10-24T11:42:15.307315" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-54.png"&gt;&lt;img src="selenium-screenshot-54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-24T11:42:15.307315" level="FAIL">Page should have contained text 'There are no event drafts to display' but did not.</msg>
+<arg>There are no event drafts to display</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-10-22T16:40:33.619197" elapsed="4.401878"/>
+<status status="FAIL" start="2024-10-24T11:42:00.045426" elapsed="15.261889">Page should have contained text 'There are no event drafts to display' but did not.</status>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-10-22T16:40:40.052333" level="INFO">Current page contains text 'Duration'.</msg>
-<arg>Duration</arg>
+<arg>Create a new event to get started</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-10-22T16:40:38.021075" elapsed="2.031765"/>
+<status status="NOT RUN" start="2024-10-24T11:42:15.307315" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-10-22T16:40:03.087461" elapsed="36.965379"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Search / Filter']</arg>
+<arg>and</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-24T11:42:15.307315" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Andy</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-10-24T11:42:15.307315" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Search / Filter']</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-24T11:42:15.307315" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>There are no event drafts to display</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-10-24T11:42:15.313824" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-24T11:41:33.234233" elapsed="42.079591">Page should have contained text 'There are no event drafts to display' but did not.</status>
 </test>
-<status status="PASS" start="2024-10-22T16:40:02.866786" elapsed="37.186054"/>
+<status status="FAIL" start="2024-10-24T11:41:32.992038" elapsed="42.321786"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Event Completed">Event Completed</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Negative Cases">Negative Cases</stat>
 </suite>
 </statistics>
 <errors>
